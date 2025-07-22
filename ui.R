@@ -1,5 +1,6 @@
 # ui.R
 
+install.packages("Rcpp", type = "source")
 library(shiny)
 
 ui <- fluidPage(
