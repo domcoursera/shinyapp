@@ -1,5 +1,7 @@
 # server.R
 
+install.packages(c("Rcpp", "shiny"), type = "source", force = TRUE)
+
 library(shiny)
 library(ggplot2) # For plotting
 

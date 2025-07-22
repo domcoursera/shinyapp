@@ -296,31 +296,6 @@
         "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-06-10 05:28:22 UTC; unix"
       }
     },
-    "commonmark": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.rstudio.com/all/__linux__/focal/291",
-      "description": {
-        "Package": "commonmark",
-        "Type": "Package",
-        "Title": "High Performance CommonMark and Github Markdown Rendering in R",
-        "Version": "1.7",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", ,\"jeroen@berkeley.edu\", role = c(\"aut\", \"cre\")),\n    person(\"John MacFarlane\", role = \"cph\", comment = \"Author of cmark\"))",
-        "URL": "http://github.com/jeroen/commonmark (devel)\nhttps://github.github.com/gfm/ (spec)",
-        "BugReports": "http://github.com/jeroen/commonmark/issues",
-        "Description": "The CommonMark specification defines a rationalized version of markdown\n    syntax. This package uses the 'cmark' reference implementation for converting\n    markdown text into various formats including html, latex and groff man. In\n    addition it exposes the markdown parse tree in xml format. Also includes opt-in\n    support for GFM extensions including tables, autolinks, and strikethrough text.",
-        "License": "BSD_2_clause + file LICENSE",
-        "Suggests": "curl, testthat, xml2",
-        "RoxygenNote": "6.0.1",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-12-01 11:57:14 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre],\n  John MacFarlane [cph] (Author of cmark)",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
-        "Date/Publication": "2018-12-01 12:30:03 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.0.0; x86_64-pc-linux-gnu; 2020-06-09 20:49:50 UTC; unix"
-      }
-    },
     "crayon": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/__linux__/focal/291",
@@ -1441,25 +1416,25 @@
         "Package": "shiny",
         "Type": "Package",
         "Title": "Web Application Framework for R",
-        "Version": "1.5.0",
+        "Version": "1.4.0.2",
         "Authors@R": "c(\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n    person(\"Yihui\", \"Xie\", role = \"aut\", email = \"yihui@rstudio.com\"),\n    person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(family = \"jQuery Foundation\", role = \"cph\",\n    comment = \"jQuery library and jQuery UI library\"),\n    person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt\"),\n    person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery UI library; authors listed in inst/www/shared/jqueryui/AUTHORS.txt\"),\n    person(\"Mark\", \"Otto\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(\"Jacob\", \"Thornton\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Bootstrap contributors\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Twitter, Inc\", role = \"cph\",\n    comment = \"Bootstrap library\"),\n    person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n    comment = \"html5shiv library\"),\n    person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n    comment = \"Respond.js library\"),\n    person(\"Stefan\", \"Petre\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Andrew\", \"Rowls\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n    comment = \"Font-Awesome font\"),\n    person(\"Brian\", \"Reavis\", role = c(\"ctb\", \"cph\"),\n    comment = \"selectize.js library\"),\n    person(\"Kristopher Michael\", \"Kowal\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(family = \"es5-shim contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(\"Denis\", \"Ineshin\", role = c(\"ctb\", \"cph\"),\n    comment = \"ion.rangeSlider library\"),\n    person(\"Sami\", \"Samhuri\", role = c(\"ctb\", \"cph\"),\n    comment = \"Javascript strftime library\"),\n    person(family = \"SpryMedia Limited\", role = c(\"ctb\", \"cph\"),\n    comment = \"DataTables library\"),\n    person(\"John\", \"Fraser\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"John\", \"Gruber\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n    comment = \"highlight.js library\"),\n    person(family = \"R Core Team\", role = c(\"ctb\", \"cph\"),\n    comment = \"tar implementation from R\")\n    )",
         "Description": "Makes it incredibly easy to build interactive web\n    applications with R. Automatic \"reactive\" binding between inputs and\n    outputs and extensive prebuilt widgets make it possible to build\n    beautiful, responsive, and powerful applications with minimal effort.",
         "License": "GPL-3 | file LICENSE",
         "Depends": "R (>= 3.0.2), methods",
-        "Imports": "utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite\n(>= 0.9.16), xtable, digest, htmltools (>= 0.4.0.9003), R6 (>=\n2.0), sourcetools, later (>= 1.0.0), promises (>= 1.1.0),\ntools, crayon, rlang (>= 0.4.0), fastmap (>= 1.0.0), withr,\ncommonmark (>= 1.7), glue (>= 1.3.2)",
-        "Suggests": "datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=\n1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),\nmagrittr, shinytest, yaml, future, dygraphs, ragg, showtext",
+        "Imports": "utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite\n(>= 0.9.16), xtable, digest, htmltools (>= 0.4.0), R6 (>= 2.0),\nsourcetools, later (>= 1.0.0), promises (>= 1.1.0), tools,\ncrayon, rlang (>= 0.4.0), fastmap (>= 1.0.0)",
+        "Suggests": "datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=\n1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),\nmagrittr, yaml",
         "URL": "http://shiny.rstudio.com",
         "BugReports": "https://github.com/rstudio/shiny/issues",
-        "Collate": "'app.R' 'app_template.R' 'bookmark-state-local.R' 'stack.R'\n'bookmark-state.R' 'bootstrap-deprecated.R'\n'bootstrap-layout.R' 'globals.R' 'conditions.R' 'map.R'\n'utils.R' 'bootstrap.R' 'cache-context.R' 'cache-disk.R'\n'cache-memory.R' 'cache-utils.R' 'diagnose.R' 'fileupload.R'\n'font-awesome.R' 'graph.R' 'reactives.R' 'reactive-domains.R'\n'history.R' 'hooks.R' 'html-deps.R' 'htmltools.R'\n'image-interact-opts.R' 'image-interact.R' 'imageutils.R'\n'input-action.R' 'input-checkbox.R' 'input-checkboxgroup.R'\n'input-date.R' 'input-daterange.R' 'input-file.R'\n'input-numeric.R' 'input-password.R' 'input-radiobuttons.R'\n'input-select.R' 'input-slider.R' 'input-submit.R'\n'input-text.R' 'input-textarea.R' 'input-utils.R'\n'insert-tab.R' 'insert-ui.R' 'jqueryui.R' 'middleware-shiny.R'\n'middleware.R' 'timer.R' 'shiny.R' 'mock-session.R' 'modal.R'\n'modules.R' 'notifications.R' 'priorityqueue.R' 'progress.R'\n'react.R' 'reexports.R' 'render-cached-plot.R' 'render-plot.R'\n'render-table.R' 'run-url.R' 'serializers.R'\n'server-input-handlers.R' 'server.R' 'shiny-options.R'\n'shinyui.R' 'shinywrappers.R' 'showcase.R' 'snapshot.R' 'tar.R'\n'test-export.R' 'test-server.R' 'test.R' 'update-input.R'",
-        "RoxygenNote": "7.1.0.9000",
+        "Collate": "'app.R' 'bookmark-state-local.R' 'stack.R' 'bookmark-state.R'\n'bootstrap-deprecated.R' 'bootstrap-layout.R' 'globals.R'\n'conditions.R' 'map.R' 'utils.R' 'bootstrap.R'\n'cache-context.R' 'cache-disk.R' 'cache-memory.R'\n'cache-utils.R' 'diagnose.R' 'fileupload.R' 'font-awesome.R'\n'graph.R' 'reactives.R' 'reactive-domains.R' 'history.R'\n'hooks.R' 'html-deps.R' 'htmltools.R' 'image-interact-opts.R'\n'image-interact.R' 'imageutils.R' 'input-action.R'\n'input-checkbox.R' 'input-checkboxgroup.R' 'input-date.R'\n'input-daterange.R' 'input-file.R' 'input-numeric.R'\n'input-password.R' 'input-radiobuttons.R' 'input-select.R'\n'input-slider.R' 'input-submit.R' 'input-text.R'\n'input-textarea.R' 'input-utils.R' 'insert-tab.R' 'insert-ui.R'\n'jqueryui.R' 'middleware-shiny.R' 'middleware.R' 'modal.R'\n'modules.R' 'notifications.R' 'priorityqueue.R' 'progress.R'\n'react.R' 'render-cached-plot.R' 'render-plot.R'\n'render-table.R' 'run-url.R' 'serializers.R'\n'server-input-handlers.R' 'server.R' 'shiny-options.R'\n'shiny.R' 'shinyui.R' 'shinywrappers.R' 'showcase.R'\n'snapshot.R' 'tar.R' 'test-export.R' 'timer.R' 'update-input.R'",
+        "RoxygenNote": "6.1.1",
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
-        "Packaged": "2020-06-19 17:22:05 UTC; winston",
+        "Packaged": "2020-03-12 20:45:13 UTC; winston",
         "Author": "Winston Chang [aut, cre],\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Yihui Xie [aut],\n  Jonathan McPherson [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Dave Gandy [ctb, cph] (Font-Awesome font),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Kristopher Michael Kowal [ctb, cph] (es5-shim library),\n  es5-shim contributors [ctb, cph] (es5-shim library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2020-06-23 13:30:03 UTC",
-        "Built": "R 4.0.0; ; 2020-11-16 21:39:29 UTC; unix"
+        "Repository": "RSPM",
+        "Date/Publication": "2020-03-13 10:00:02 UTC",
+        "Built": "R 4.0.0; ; 2020-06-11 16:31:53 UTC; unix"
       }
     },
     "sourcetools": {
@@ -1866,9 +1841,6 @@
     "packrat/desc/colorspace": {
       "checksum": "25ff5631e1eba6c745d3c71031e72e74"
     },
-    "packrat/desc/commonmark": {
-      "checksum": "5ad9776f97248942159a35c42b86ac4a"
-    },
     "packrat/desc/crayon": {
       "checksum": "8d551729b78df648fa9436d7c3f650d6"
     },
@@ -2008,7 +1980,7 @@
       "checksum": "71ba9cc6d554cadf8faedec25dd35f43"
     },
     "packrat/desc/shiny": {
-      "checksum": "bec119fe503fa52064a5f8b62de9845d"
+      "checksum": "046c6e718519e4e6d46c5404434a7c85"
     },
     "packrat/desc/sourcetools": {
       "checksum": "04cf4da9513116f40233999911859607"
@@ -2053,13 +2025,13 @@
       "checksum": "ad3caf9d4a70c51618ab13a60b04a2a9"
     },
     "packrat/packrat.lock": {
-      "checksum": "4f4454019ffb40524a439f081ac64ee9"
+      "checksum": "b9ba87772fedebd715c1dc3f10e25221"
     },
     "server.R": {
-      "checksum": "ded739f6b4d1d18ef551786267c008d8"
+      "checksum": "fe0442d3f3541dc98a0a64f1b580cb75"
     },
     "ui.R": {
-      "checksum": "cafeaa887a95a3f004354628304a5835"
+      "checksum": "431ecb24250c0bb916253d918c4b4c45"
     }
   },
   "users": null
