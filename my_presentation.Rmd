@@ -1,0 +1,35 @@
+---
+title: "My Awesome Shiny App Pitch"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+## The Problem
+===
+*   Traditional methods for X are inefficient.
+*   Lack of interactive exploration of data Y.
+
+## My Shiny App: The Solution
+===
+*   Interactive data visualization with Dataset Explorer.
+*   Easy selection of datasets and variables.
+*   Dynamic histograms for quick insights.
+
+## Under the Hood
+===
+This is how we calculate the histogram bins dynamically:
+
+```{r, echo=TRUE, eval=TRUE}
+# Example calculation (mimicking server.R logic)
+sample_data <- iris$Sepal.Length
+num_bins <- 20
+bins <- seq(min(sample_data), max(sample_data), length.out = num_bins + 1)
+print(head(bins))
+```
+
+## Try it Out!
+===
+*   Visit the app: https://yourusername.shinyapps.io/myappname/
+*   Explore the code: https://github.com/domcoursera/shinyapp
+
+Thank you!
